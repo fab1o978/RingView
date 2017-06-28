@@ -157,13 +157,7 @@ public class RingView extends View {
 
         onValueChange.onChange(pct);
 
-        //Log.d("RingView", "Angle: " + angle);
         endValue = angle;
-
-        /*if(isValueChanging){
-            isValueChanging = false;
-            onValueChange.onChangeStop(pct);
-        }*/
 
         invalidate();
     }
