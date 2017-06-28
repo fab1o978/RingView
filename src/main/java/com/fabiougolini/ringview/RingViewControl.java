@@ -46,7 +46,6 @@ public class RingViewControl extends RelativeLayout {
                 if(motionEvent.getAction() == MotionEvent.ACTION_DOWN){
                     tvPct.animate().scaleXBy(.4f).scaleYBy(.4f).setDuration(150).start();
                 } else if(motionEvent.getAction() == MotionEvent.ACTION_MOVE){
-                    //Log.d("RingViewControl", motionEvent.getX() + ", " + motionEvent.getY());
                     ((RingView)view).setAngle(motionEvent.getX(), motionEvent.getY());
                 } else if(motionEvent.getAction() == MotionEvent.ACTION_UP){
                     tvPct.animate().scaleXBy(-.4f).scaleYBy(-.4f).setDuration(250).start();
@@ -54,8 +53,7 @@ public class RingViewControl extends RelativeLayout {
                 return true;
             }
         });
-        ringView.setThickness(60);
-        //ringView.setText("Ready");
+        ringView.setThickness(50);
 
         ringView.setOnValueChangeListener(new RingView.OnValueChange() {
             @Override

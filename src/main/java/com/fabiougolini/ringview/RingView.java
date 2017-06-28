@@ -130,6 +130,7 @@ public class RingView extends View {
         invalidate();
     }
 
+    // setValue 0-100
     public void setValue(int value){
         this.endValue = map(value, 0, 100, 0, 360);
 
@@ -152,8 +153,6 @@ public class RingView extends View {
         }
 
         int pct = map(angle, 0, 360, 0, 100);
-
-        //this.text = pct + "%";
 
         onValueChange.onChange(pct);
 
