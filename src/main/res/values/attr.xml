@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RingView">
+        <attr name="ringColor" format="color" />
+        <attr name="ringThickness" format="integer" />
+        <attr name="startValue" format="integer" />
+        <attr name="endValue" format="integer" />
+        <attr name="textSize" format="dimension" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+</resources>
